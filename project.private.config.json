@@ -20,13 +20,13 @@
         },
         {
           "name": "pages/index/index",
-          "pathName": "pages/test/test",
+          "pathName": "pages/index/index",
           "query": "",
           "scene": null
         },
         {
-          "name": "pages/index/index",
-          "pathName": "pages/test",
+          "name": "pages/test/test",
+          "pathName": "pages/test/test",
           "query": "",
           "scene": null
         }

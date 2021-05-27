@@ -7,8 +7,10 @@ Page({
    */
   data: {
     djshu:4,//树的等级1，2，3，4
+    level:0,
     tree:false,
     waternum:0,
+    nownum:0,
     waterbool:false,
     animation:true,
     shutree:false,
@@ -19,17 +21,20 @@ Page({
       tree:false,
       shutree:false,
       animation:true,
+      waternum:this.data.waternum+=90,
+      nownum:this.data.nownum+=90
     })
-    var num=this.data.waternum
-    if(num==100){
+    if(this.data.nownum>=100){
       wx.showToast({
-        title: '你以完成任务',
+        title: '恭喜你，升级啦',
       })
-      return false
+      this.data.nownum = this.data.nownum%100
+      this.setData({
+        level:this.data.level+=1,
+        nownum:this.data.nownum
+      })
+      return true
     }
-     this.setData({
-      waternum:num+=5
-     })
   },
   before(){
     wx.navigateBack({
