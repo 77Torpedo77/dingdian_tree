@@ -4,7 +4,9 @@
 	<van-icon name="arrow-left" size="22px" color="#fff" />
 	
 </view>
-
+<view class="paihang">
+ 
+</view>
 <view class="box">
 	<view class="progress_box">
 		<van-progress color="#f2826a" percentage="50" stroke-width="18" />
