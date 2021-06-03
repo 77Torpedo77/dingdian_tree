@@ -1,5 +1,3 @@
-
-```html
 <view class="return" bindtap="before">
 	<van-icon name="arrow-left" size="22px" color="#fff" />
 </view>
@@ -7,21 +5,21 @@
 <view class="box">
 	
 	<view class="progress_box">
-		<van-progress color="#f2826a" percentage="50" stroke-width="18" />
+		<van-progress color="#f2826a" percentage="{{nownum}}" stroke-width="18" />
 		  <!--	<image class="jindt" src="/images/jdt.png"></image>-->
 	</view>
-	<view style="color:#fff;margin-top:8rpx;text-align:center;font-size:24rpx">再浇水17000g水滴，小树将茁壮成长为茂盛大树～</view>
+	<view style="color:#fff;margin-top:8rpx;text-align:center;font-size:24rpx">已经浇水{{waternum}}g,当前等级{{level}}，小树快成长为茂盛大树啦～</view>
 	<!-- 树 -->
 	<view bindanimationend="treeend" class="tree {{shutree?'a-swing':''}}">
 	  <!-- 大树 -->
-		<image wx:if="{{waternum==100}}" class="shumu" mode="aspectFill" src="../../images/shu.png"></image>
+		<image wx:if="{{level >= 3}}" class="shumu" mode="aspectFill" src="../../images/shu.png"></image>
 		
   
-	 <image wx:if="{{waternum>=60 && waternum<100}}" class="zhongshu" mode="aspectFill" src="../../../images/xiaoshu@1x.png"></image>
+	 <image wx:if="{{level == 2}}" class="zhongshu" mode="aspectFill" src="../../../images/xiaoshu@1x.png"></image>
 
-	 <image wx:if="{{waternum>=20 && waternum<60}}" class="xiaoshu" mode="aspectFill" src="../../../images/xiaoshumiao@1x.png"></image>
+	 <image wx:if="{{level == 1}}" class="xiaoshu" mode="aspectFill" src="../../../images/xiaoshumiao@1x.png"></image>
 
-	 <image wx:if="{{waternum>=0 && waternum<20}}" class="youshu" mode="aspectFill" src="../../../images/xiaoshuya@1x.png"></image>
+	 <image wx:if="{{level == 0}}" class="youshu" mode="aspectFill" src="../../../images/xiaoshuya@1x.png"></image>
 	 
 		<image mode="aspectFill" class="shupan" src="/images/shupan.png"></image>
 		<image wx:if="{{waterbool}}" class="water" src="/images/water.png"></image>
