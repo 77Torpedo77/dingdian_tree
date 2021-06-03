@@ -1,0 +1,13 @@
+/* pages/demo/demo.wxss */
+.paihang{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left:500rpx;
+  top:-250rpx
+}
+.paihang>.paihangbutton{
+  position: absolute;
+  width: 10%;
+  height:100%
+}

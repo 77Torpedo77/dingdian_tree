@@ -1,0 +1,5 @@
+<!--pages/paihangdan/paihangdan.wxml-->
+<text>pages/paihangdan/paihangdan.wxml</text>
+<view class="bandan">
+<image class="paihangdan"></image>
+</view>

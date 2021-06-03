@@ -2,12 +2,10 @@
 ```html
 <view class="return" bindtap="before">
 	<van-icon name="arrow-left" size="22px" color="#fff" />
-	
 </view>
-<view class="paihang">
- 
-</view>
+
 <view class="box">
+	
 	<view class="progress_box">
 		<van-progress color="#f2826a" percentage="50" stroke-width="18" />
 		  <!--	<image class="jindt" src="/images/jdt.png"></image>-->
@@ -76,6 +74,11 @@
 	</view>
 	<!-- /雨水 -->
 	<!-- <view type="button" id="btn" bindtap="animation">浇水</view> -->
+	
+	<view class="paihang">
+		<image  mode="aspectFit" class="paihangbutton" src="/images/paihang.png" ></image>
+	</view>
 </view>
+
 
 <image mode="aspectFill" class="tree_bg" src="/images/tree_bg.jpg"> </image>

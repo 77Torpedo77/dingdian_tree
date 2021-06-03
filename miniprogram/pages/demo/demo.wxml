@@ -1,0 +1,5 @@
+<!--pages/demo/demo.wxml-->
+<text>pages/demo/demo.wxml</text>
+<view class="paihang">
+		<image  mode="aspectFit" class="paihangbutton" src="/images/paihang.png" ></image>
+</view>

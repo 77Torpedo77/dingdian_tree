@@ -286,3 +286,14 @@
    .van-progress__portion{
      transition: .4s!important;
    }
+   .paihang{
+    position: relative;
+    
+    
+  }
+  .paihang .paihangbutton{
+    position: absolute;
+    left:600rpx;
+    top:-450rpx;
+    width: 50%;
+}

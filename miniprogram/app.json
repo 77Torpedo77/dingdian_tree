@@ -1,6 +1,9 @@
 {
   "pages": [
+    "pages/paihangdan/paihangdan",
     "pages/index/index",
+    "pages/demo/demo",
+    
     "pages/test/test"
 
   ],
